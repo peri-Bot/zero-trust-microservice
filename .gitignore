@@ -1,0 +1,40 @@
+# =========================
+# Nix
+# =========================
+result
+result-*
+.direnv/
+
+# =========================
+# Go Backend
+# =========================
+backend-api/bin/
+backend-api/*.exe
+backend-api/vendor/
+backend-api/coverage.out
+
+# =========================
+# Node.js Frontend
+# =========================
+frontend-api/node_modules/
+frontend-api/npm-debug.log
+frontend-api/yarn-error.log
+frontend-api/.env
+
+# =========================
+# Kubernetes & Security (CRITICAL)
+# =========================
+# Never commit your vault unseal keys, root tokens, or local kubeconfigs!
+vault-keys.json
+vault-token.txt
+kubeconfig.yaml
+*.pem
+*.key
+*.crt
+
+# =========================
+# IDEs and OS
+# =========================
+.DS_Store
+.idea/
+.vscode/
